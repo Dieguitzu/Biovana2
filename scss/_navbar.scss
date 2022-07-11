@@ -1,0 +1,22 @@
+
+
+#navbar{
+    box-shadow: 3px 3px 15px rgb(32, 32, 32);
+    background-color: $mainColor; 
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+    .logo{
+        font-family: 'Dancing Script', cursive;
+        color:$secondaryColor;
+        font-size:$textXl;
+        text-shadow: $shadow2;
+        }
+        #boton{  
+            padding-right: 40px;
+            color:$black;
+            }
+            #boton:hover{
+                color:$white;
+                }
+}

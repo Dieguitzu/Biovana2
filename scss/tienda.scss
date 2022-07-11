@@ -1,0 +1,12 @@
+body main h3{
+    font-family: 'Dancing Script', cursive; 
+    font-size:xxx-large;
+    color: rgb(92, 40, 92);
+    position: relative;
+    animation: h3 4s forwards;
+    text-shadow: $shadow2;
+    margin: 10px;
+}
+body main #tienda-div{
+    box-shadow:$shadow3;
+}

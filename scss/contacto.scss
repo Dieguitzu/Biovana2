@@ -1,0 +1,22 @@
+.main-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    body main h3{
+        font-family: $mainFont; 
+        font-size:$textXl;
+        color: $secondaryColor;
+        position: relative;
+        animation: h3 4s forwards;
+        text-shadow: $shadow2;
+        margin: 10px;
+        padding-bottom: 10px;
+
+    }
+    .main-div{
+        background-color: $mainColor;
+        border-radius: 3%;
+        width: 40%;
+        }

@@ -1,0 +1,71 @@
+//import
+
+
+@import "_vars";
+@import "_font";
+@import "_navbar";
+@import "_footer";
+@import "_breakpoints";
+@import "tienda";
+@import "nosotras";
+@import "contacto";
+@import "distribuidores";
+
+//index
+
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    }
+#body{
+        background-image: url(../img/fondo.png);
+        background-attachment: fixed;
+        margin: 0;
+        .card { background-color: rgba(245, 245, 245, 0.2); }
+        .card-header, .card-footer { opacity: 1.2}            
+        .carousel{
+        box-shadow: $shadow3;
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family:$mainFont;
+            font-weight:$bold;
+            width: 100vw;
+            font-size:$textXl;
+            text-align: center;
+            text-shadow: $shadow2;
+            margin-top: 10px;
+            color:$secondaryColor;
+            animation: biovana 4s forwards;
+            }
+        section #main-section-div{
+            box-shadow: $shadow2;
+            display: flex;
+            justify-content: center;
+            }
+            h5 #titulo{
+                font-family:$secondaryFont;
+                font-size:$textMd;
+                padding-bottom: 15px;
+                text-align: center;
+            }
+            p #text{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 2.2vh ;
+                text-align: center;
+                
+                }
+    #aside{ 
+        display: inline-block;
+        position: relative;
+        bottom: 40px;
+        margin-left: 30px;
+        }
+        #aside-div2{
+            box-shadow: 3px 3px 15px rgb(32, 32, 32);
+            }
+        }
+
+
