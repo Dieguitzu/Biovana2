@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap");
 #navbar {
-  box-shadow: 3px 3px 15px #202020;
+  box-shadow: 10px 3px 30px #202020;
   background-color: rgba(215, 181, 247, 0.4);
   position: fixed;
   z-index: 2;
@@ -13,8 +13,9 @@
   #navbar #boton {
     padding-right: 40px;
     color: #00080f; }
-  #navbar #boton:hover {
-    color: #dee1e4; }
+    #navbar #boton:hover {
+      color: #dee1e4;
+      font-size: 1.3em; }
 
 #footer {
   background-color: rgba(215, 181, 247, 0.4);
@@ -39,16 +40,22 @@
     display: none; } }
 
 body main h3 {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-size: xxx-large;
-  color: #5c285c;
+  color: rgba(92, 40, 92, 0.9);
   position: relative;
   animation: h3 4s forwards;
   text-shadow: 2px 1px 30px #332c30;
   margin: 10px; }
 
 body main #tienda-div {
-  box-shadow: 10px 3px 30px #202020; }
+  box-shadow: 10px 3px 30px #202020;
+  cursor: pointer;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  text-align: center; }
+  body main #tienda-div:hover {
+    transform: scale(1.2);
+    transition: all .5s; }
 
 body #main-nosotros {
   display: flex;
@@ -84,7 +91,11 @@ body main h3 {
 .main-div {
   background-color: rgba(215, 181, 247, 0.4);
   border-radius: 3%;
-  width: 40%; }
+  width: 40%;
+  box-shadow: 10px 3px 30px #202020; }
+  .main-div:hover {
+    transform: scale(1.05);
+    transition: all .4s; }
 
 body #main-dist {
   display: flex;
@@ -96,7 +107,11 @@ body #distribuidor {
   display: flex;
   max-width: 600px;
   box-shadow: 10px 3px 30px #202020;
-  border-radius: 3%; }
+  border-radius: 3%;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif; }
+  body #distribuidor:hover {
+    transform: scale(1.05);
+    transition: all .4s; }
 
 html, body {
   max-width: 100% !important;
@@ -128,7 +143,11 @@ html, body {
   #body section #main-section-div {
     box-shadow: 2px 1px 30px #332c30;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    cursor: pointer; }
+    #body section #main-section-div:hover {
+      transform: scale(1.03);
+      transition: all .5s; }
   #body h5 #titulo {
     font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
     font-size: 1em;
@@ -145,3 +164,6 @@ html, body {
     margin-left: 30px; }
   #body #aside-div2 {
     box-shadow: 3px 3px 15px #202020; }
+    #body #aside-div2:hover {
+      transform: scale(1.05);
+      transition: all .5s; }

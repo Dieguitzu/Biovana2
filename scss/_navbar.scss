@@ -1,7 +1,7 @@
 
 
 #navbar{
-    box-shadow: 3px 3px 15px rgb(32, 32, 32);
+    box-shadow:$shadow3;
     background-color: $mainColor; 
     position: fixed;
     z-index: 2;
@@ -12,11 +12,12 @@
         font-size:$textXl;
         text-shadow: $shadow2;
         }
-        #boton{  
-            padding-right: 40px;
-            color:$black;
-            }
-            #boton:hover{
-                color:$white;
-                }
+    #boton{  
+        padding-right: 40px;
+        color:$black;
+        &:hover{
+            color:  $white;
+            font-size:  $textMd2;
+        }
+    }
 }

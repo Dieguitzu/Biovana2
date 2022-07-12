@@ -44,6 +44,11 @@ html, body {
             box-shadow: $shadow2;
             display: flex;
             justify-content: center;
+            cursor: pointer;
+            &:hover{
+                transform: scale(1.03);
+                transition: all .5s;
+                }
             }
             h5 #titulo{
                 font-family:$secondaryFont;
@@ -55,7 +60,6 @@ html, body {
                 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 font-size: 2.2vh ;
                 text-align: center;
-                
                 }
     #aside{ 
         display: inline-block;
@@ -65,6 +69,10 @@ html, body {
         }
         #aside-div2{
             box-shadow: 3px 3px 15px rgb(32, 32, 32);
+            &:hover{
+                transform: scale(1.05);
+                transition: all .5s;
+                }
             }
         }
 

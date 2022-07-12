@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     }
 
     body main h3{
@@ -19,4 +20,9 @@
         background-color: $mainColor;
         border-radius: 3%;
         width: 40%;
+        box-shadow:$shadow3;
+        &:hover{
+            transform: scale(1.05);
+            transition: all .4s;
+        }
         }
