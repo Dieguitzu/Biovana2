@@ -1,8 +1,8 @@
 //import
 
-
-@import "_vars";
 @import "_font";
+@import "_vars";
+@import "mixins";
 @import "_navbar";
 @import "_footer";
 @import "_breakpoints";
@@ -11,69 +11,98 @@
 @import "contacto";
 @import "distribuidores";
 
+
 //index
 
 html, body {
     max-width: 100% !important;
     overflow-x: hidden !important;
-    }
-#body{
+    #body{
         background-image: url(../img/fondo.png);
         background-attachment: fixed;
         margin: 0;
-        .card { background-color: rgba(245, 245, 245, 0.2); }
+        .card { background-color: $bgColor; }
         .card-header, .card-footer { opacity: 1.2}            
         .carousel{
-        box-shadow: $shadow3;
+            box-shadow: $shadow3;
         }
         h1{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include d-flex(center,center);
+            color: map-get($map:$paleta , $key: 'dos');
             font-family:$mainFont;
             font-weight:$bold;
             width: 100vw;
             font-size:$textXl;
             text-align: center;
             text-shadow: $shadow2;
-            margin-top: 10px;
-            color:$secondaryColor;
-            animation: biovana 4s forwards;
+            margin-top: 20px;
             }
         section #main-section-div{
             box-shadow: $shadow2;
-            display: flex;
-            justify-content: center;
+            display: inline-block;
+            position: relative;
+            top:30%;
             cursor: pointer;
+            width: 85vw;
+            margin-left: 5%;
             &:hover{
-                transform: scale(1.03);
+                transform: scale(1.02);
                 transition: all .5s;
                 }
-            }
-            h5 #titulo{
+            #titulo{
                 font-family:$secondaryFont;
-                font-size:$textMd;
+                font-size:$textLg;
                 padding-bottom: 15px;
+                padding-top:10px;
                 text-align: center;
-            }
-            p #text{
-                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                font-size: 2.2vh ;
+                color: map-get($map:$paleta , $key: 'tres');
+                }
+            #text{
+                font-family:$secondaryFont;
+                font-size:$textMd2;
+                color:$tercerColor;
                 text-align: center;
                 }
-    #aside{ 
-        display: inline-block;
-        position: relative;
-        bottom: 40px;
-        margin-left: 30px;
-        }
-        #aside-div2{
-            box-shadow: 3px 3px 15px rgb(32, 32, 32);
-            &:hover{
-                transform: scale(1.05);
-                transition: all .5s;
+            }
+        .div-icon{
+            @include d-flex(center,center);
+            flex-direction:row;
+            flex-wrap: wrap;
+            padding-top: 10px;
+            .div-item{
+                @include d-flex(center,center);
+                flex-direction:column;
+                .icon{
+                    @include d-flex(center,center);
+                    width:7em;
+                    }
+                .icon-text{
+                    @include d-flex(center,center);
+                    flex-direction: wrap;
+                    width: 10em; 
+                    font-family:$secondaryFont;
+                    font-size: $textMd2;
+                    font-weight:$bold;
+                    padding-top: 5px;
                 }
             }
         }
-
-
+        #aside{ 
+            width: 90vw;
+            padding-left: 10vw;
+            #aside-div2{
+                box-shadow: $shadow;
+                margin-bottom: 50px;
+                cursor: pointer;
+                &:hover{
+                transform: scale(1.04);
+                transition: all .3s;
+                }
+                h5{
+                    font-family: $secondaryFont;
+                    color:$secondaryColor2;
+                }
+            }
+        }
+    }
+}

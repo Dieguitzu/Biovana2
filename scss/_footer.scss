@@ -1,6 +1,9 @@
 #footer{    
     background-color: $mainColor; 
     box-shadow: 3px 3px 35px rgb(32, 32, 32);
+    #boton{
+        color: $black;
+    }
     .ubicacion{
         box-shadow: 3px 3px 15px rgb(32, 32, 32);
         }

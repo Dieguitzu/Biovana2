@@ -1,0 +1,30 @@
+//extend del h3 lo hice en "tienda" por un h2
+
+h3{font-family:$mainFont; 
+    font-size:$textXl;
+    color: $secondaryColor;
+    position: relative;
+    animation: h3 4s forwards;
+    text-shadow: $shadow2;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+//mixins
+
+@mixin d-flex($justify, $align){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+//maps 
+
+$paleta:(
+    'uno': #d7b5f7b3,
+    'dos': #5c285ce6,
+    'tres':#974997,
+    'cuatro':#381938,
+    'cinco': #dee1e4,
+    'seis': #00080f,
+);

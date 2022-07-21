@@ -1,28 +1,22 @@
 .main-contact{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    }
-
-    body main h3{
-        font-family: $mainFont; 
-        font-size:$textXl;
-        color: $secondaryColor;
-        position: relative;
-        animation: h3 4s forwards;
-        text-shadow: $shadow2;
-        margin: 10px;
-        padding-bottom: 10px;
-
-    }
+    @include d-flex(center,center);
     .main-div{
         background-color: $mainColor;
         border-radius: 3%;
-        width: 40%;
         box-shadow:$shadow3;
         &:hover{
-            transform: scale(1.05);
+            transform: scale(1.04);
             transition: all .4s;
         }
+        .btn{
+            background-color:$mainColor;
+            color:$black;
+            border-color: $tercerColor;
+            &:hover{
+                background-color: $tercerColor;
+                color:$white;
+                border-color:$mainColor;
+            }
         }
+    }
+}

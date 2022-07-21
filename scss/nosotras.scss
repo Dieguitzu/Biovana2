@@ -1,17 +1,6 @@
 body{
     #main-nosotros{
-        display: flex;
+        @include d-flex(center,center);
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
-    main h3{
-    font-family: $mainFont; 
-    font-size:$textXl;
-    color: $secondaryColor;
-    position: relative;
-    animation: h3 4s forwards;
-    text-shadow: $shadow2;
-    margin: 10px;
-    padding-bottom: 10px;}
 }

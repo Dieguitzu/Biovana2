@@ -1,20 +1,26 @@
 @media screen and (max-width: 1262px){
     h2{
         display: none;
-        }
-            }
-@media screen and (max-width: 1097px){
+    }
+}
+@media screen and (max-width: 1000px){
     #main-section-div{
-        width: 100vw;
-        }
+        width: 95vw;
+    }
     #aside{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        }
     }
+}
 @media screen and (max-width: 992px){
-.ubicacion{
-    display: none;
+    .ubicacion{
+        display: none;
+        }
+}
+
+@media screen and (max-width: 454px){
+    #logo{
+        font-size: $textMd2;
     }
-    }
+}

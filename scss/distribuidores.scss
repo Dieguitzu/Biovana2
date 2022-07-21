@@ -1,10 +1,8 @@
 body{
     #main-dist{
-        display: flex;
+        @include d-flex(center,center);
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-            }
+
             #distribuidor{
                 display:flex;
                 max-width: 600px;
@@ -15,5 +13,6 @@ body{
                     transform: scale(1.05);
                     transition: all .4s;
                 }
-                }
-}
+            }
+        }
+    }

@@ -1,20 +1,26 @@
-body main h3{
-    font-family:$mainFont; 
-    font-size:xxx-large;
-    color: $secondaryColor;
-    position: relative;
-    animation: h3 4s forwards;
-    text-shadow: $shadow2;
-    margin: 10px;
-
-}
-body main #tienda-div{
-    box-shadow:$shadow3;
-    cursor: pointer;
-    font-family: $secondaryFont;
-    text-align: center;
-    &:hover{
-        transform: scale(1.2);
-        transition: all .5s;
+body{
+    h2{
+    @extend h3 ;
+    }
+    main #tienda-div{
+        box-shadow:$shadow3;
+        cursor: pointer;
+        font-family: $secondaryFont;
+        text-align: center;
+        margin-bottom: 10px;
+        &:hover{
+            transform: scale(1.1);
+            transition: all .5s;
+            }
+        .btn{
+            background-color:$mainColor;
+            color:$black;
+            border-color: $tercerColor;
+            &:hover{
+                background-color: $tercerColor;
+                color:$white;
+                border-color:$mainColor;
+            }
+        }
     }
 }

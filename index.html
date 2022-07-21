@@ -3,12 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Biovana Sustentable
-    </title>
+    <meta name="Biovana sustentable" content="cosmetica natural, jabon, shampoo solido"/>
+    <meta name="description" content="Biovana Sustentable, Cosmetica natural - venta de productos artesanales para cuidado personal, envios a todo el país ">
+    <meta name="author" content="Diego Escudero" />
+    <meta name="copyright" content="Biovana Sustentable"/>
+    <meta name="robots" content="index"/>
+    <meta name="robots" content="follow"/>
+    <title>Biovana Sustentable</title>
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!--Mi style-->
     <link rel="stylesheet" type="text/css" href="./css/style.css">  
+    <!--icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   </head>
   <body id="body">
     <!--inicio de nav-->
@@ -16,7 +23,7 @@
       <div class="container-fluid">
         <a class="navbar-brand logo" href="./index.html">Biovana Sustentable</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon" ></span>
+        <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="botonera">
@@ -24,23 +31,22 @@
               <a class="nav-link" aria-current="page" href="./index.html" id="boton">Home</a>
             </li>
             <li class="nav-item" >
-              <a class="nav-link" href="./assets/tienda.html" id="boton">Tienda</a>
+              <a class="nav-link" href="./pages/tienda.html" id="boton">Tienda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./assets/nosotros.html" id="boton">Nosotras</a>
+              <a class="nav-link" href="./pages/nosotros.html" id="boton">Nosotras</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./assets/contactos.html" id="boton"> Contacto</a>
+              <a class="nav-link" href="./pages/contactos.html" id="boton"> Contacto</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./assets/distribuidores.html" id="boton">Distribuidores</a>
+              <a class="nav-link" href="./pages/distribuidores.html" id="boton">Distribuidores</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!--fin de nav-->
-
     <!--inicio carousel-->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
       <div class="carousel-indicators">
@@ -50,13 +56,13 @@
       </div>
       <div class="carousel-inner box-shadow">
         <div class="carousel-item active">
-          <img src="./img/hero.webp" class="d-block w-100 h-100" alt="...">
+          <img src="./assets/img/hero.webp" class="d-block w-100 h-90" alt="imagen de jabones y jaboneras en el bosque">
         </div>
         <div class="carousel-item">
-          <img src="./img/hero1.webp" class="d-block w-100 h-100" alt="...">
+          <img src="./assets/img/hero1.webp" class="d-block w-100 h-90" alt="Caja de jabones, oleos ">
         </div>
         <div class="carousel-item">
-          <img src="./img/hero2.webp" class="d-block w-100 h-100" alt="...">
+          <img src="./assets/img/hero2.webp" class="d-block w-100 h-90" alt="Presentación de oleos en distintos tamaños">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -69,113 +75,142 @@
       </button>
     </div>
     <!--fin carousel-->
-
     <!--comienzo del main-->
-    <div class="container-fluid">
-      <h1 class="p-4 text-center biovana">Somos cosmetica natural, somos Biovana</h1> 
-    </div>
-
-    <section class="py-4 d-inline-block col-lg-9" >
-
-      <div class="card mb-3 col-sm-12 col-md-12 col-lg-12" id="main-section-div" >
-        <div class="row g-0 " >
-          <div class="col-md-8">
-            <img src="./img/nosotras.webp" class="img-fluid rounded-start" alt="...">
+    <main class="container-fluid">
+      <div class="container-fluid">
+        <h1 class="p-4 text-center biovana">Somos cosmetica natural, somos Biovana Sustentable !</h1> 
+      </div>
+      <section class="py-4 col-md-12" >
+        <div class="card mb-3 col-sm-12 col-md-8 col-lg-12 col-xl-12" id="main-section-div" >
+          <div class="row g-0 " >
+            <div class="col-md-12 col-lg-12 col-xl-8">
+              <img src="./assets/img/nosotras.webp" class="img-fluid rounded-start" alt="imagen de nosotras">
+            </div>
+            <div class="col-md-12 col-xl-4">
+              <div class="card-body p-4">
+                <h5 class="card-title" id="titulo">Nuestro proyecto</h5>
+                <p class="card-text" id="text">Somos madre e hija creadoras de este emprendimiento sustentable y respetuoso con el medio ambiente. La idea surgió en medio de una pandemia en la cual, buscando un proyecto que nos apasione, comenzamos a ver cuáles eran los productos de la naturaleza más nutritivos para nuestro cuerpo y así poder llevarlo a cada hogar dispuesto a brindar su granito de arena por la tierra.</p>
+              </div>
+            </div>
           </div>
-          <div class="col-md-4">
-            <div class="card-body p-5">
-              <h5 class="card-title" id="titulo">Nuestro proyecto</h5>
-              <p class="card-text" id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure minima corporis quidem reiciendis, ipsam explicabo magni cum facere! Repudiandae, nesciunt! Numquam laboriosam rem vitae ut necessitatibus labore aliquam dolor. Debitis?</p>
+        </div>
+        <div class="card mt-3 mb-3 col-sm-12 col-md-8 col-lg-12 col-xl-12" id="main-section-div">
+          <div class="row g-0">
+            <div class="col-md-12 col-lg-12 col-xl-8">
+              <img src="./assets/img/produ.webp" class="img-fluid rounded-start" alt="imagen produciendo">
+            </div>
+            <div class="col-md-12 col-xl-4">
+              <div class="card-body p-5">
+                <h5 class="card-title" id="titulo">Proceso de producción</h5>
+                <p class="card-text" id="text">Nuestros productos son 100% naturales, libre del maltrato animal, gluten y parabenos, el proceso es casero y fue refinado hasta encontrar una receta acorde con la exigencia de quien decida dejar el uso de productos industriales.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="div-icon">
+        <div class="div-item col-lg-2 col-md-2 col-sm-4">
+          <img src="./assets/icons/libre-de-crueldad.png" class="icon">
+          <p class="icon-text">No testeado</p>
+        </div>
+        <div class="div-item col-lg-2 col-md-2 col-sm-4">
+          <img src="./assets/icons/gluten-free.png" class="icon">
+          <p class="icon-text">Sin T.A.C.C.</p>
+        </div>
+        <div class="div-item col-lg-2 col-md-2 col-sm-4">
+          <img src="./assets/icons/vegano.png" class="icon">
+          <p class="icon-text">Vegano</p>
+        </div>
+        <div class="div-item col-lg-2 col-md-2 col-sm-4">
+          <img src="./assets/icons/natural.png" class="icon">
+          <p class="icon-text">Organico</p>
+        </div>
+        <div class="div-item col-lg-2 col-md-2 col-sm-4">
+          <img src="./assets/icons/libre-de-parabeno.png" class="icon">
+          <p class="icon-text">Sin parabenos</p>
+        </div>
+      </div>
+    </main>
+  <!--fin del main-->
+  <!--comienzo aside-->
+    <aside id="aside">
+      <h3 class="text-center p-5">Nuestra linea de jabones </h3>
+      <div class="row row-cols-1 row-cols-md-4 g-3 text-center" id="aside-items">
+        <div class="col col-sm-6 col">
+          <div class="card" id="aside-div2">
+            <a href="./pages/tienda.html"><img  src="./assets/img/carbon.webp" class="card-img-top" alt="jabon de carbon activado"></a>
+            <div class="card-body">
+              <h5 class="card-title">Carbón</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col col-sm-6">
+          <div class="card" id="aside-div2">
+            <a href="./pages/tienda.html"><img src="./assets/img/canela.webp" class="card-img-top" alt="jabon de canela"></a>
+            <div class="card-body">
+              <h5 class="card-title">Canela</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col col-sm-6">
+          <div class="card" id="aside-div2">
+            <a href="./pages/tienda.html"><img src="./assets/img/lavanda.webp" class="card-img-top" alt="jabon de lavanda"></a>
+            <div class="card-body">
+              <h5 class="card-title">Lavanda</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col col-sm-6">
+          <div class="card" id="aside-div2">
+            <a href="./pages/tienda.html"><img src="./assets/img/neutro.webp" class="card-img-top" alt="jabon neutro"></a>
+            <div class="card-body">
+              <h5 class="card-title">Neutro</h5>
             </div>
           </div>
         </div>
       </div>
-      <div class="card mb-3 col-sm-12 col-md-12 col-lg-12" id="main-section-div">
-        <div class="row g-0">
-          <div class="col-md-8">
-            <img src="./img/produ.webp" class="img-fluid rounded-start" alt="...">
-          </div>
-          <div class="col-md-4">
-            <div class="card-body p-5">
-              <h5 class="card-title" id="titulo"
-              >Proceso de producción</h5>
-              <p class="card-text" id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure minima corporis quidem reiciendis, ipsam explicabo magni cum facere! Repudiandae, nesciunt! Numquam laboriosam rem vitae ut necessitatibus labore aliquam dolor. Debitis?</p>
+    </aside>
+  <!--fin aside-->
+  <!--inicio footer-->
+    <footer id="footer">
+      <div class="container-fluid d-flex justify-content-evenly mt-5 w-100 p-4">
+        <div class="row text-white">
+          <div class="col-xs-4 col-sm-6 col-md-6 col-lg-4">
+            <p class="h5 text-black mb-3">Seguinos</p>
+            <div class="mb-2 d-inline-block ">
+              <a href="https://www.instagram.com/biovanasustentable/"><img src="./assets/icons/instagram.svg" alt="instagram"></a>
+            </div>
+            <div class="mb-2 d-inline-block ">
+              <a href="https://www.facebook.com/"><img src="./assets/icons/facebook.svg" alt="facebook"></a>
+            </div>
+            <div class="mb-2 d-inline-block ">
+              <a href="https://www.twitter.com"><img src="./assets/icons/twitter.svg" alt="twitter"></a>
+            </div>
+          </div>  
+          <div class="col-xs-4 col-sm-6 col-md-6 col-lg-4">
+            <p class="h5 text-black mb-3">Links</p>
+            <div class="mb-2">
+              <a class="text-decoration-none" id="boton" href="./pages/tienda.html">Tienda</a>
+            </div>
+            <div class="mb-2">
+              <a class="text-decoration-none" id="boton" href="./pages/nosotros.html">Nosotras</a>
+            </div>
+            <div class="mb-2">
+              <a class="text-decoration-none" id="boton" href="./pages/contactos.html">Contacto</a>
+            </div>
+            <div class="mb-2">
+              <a class="text-decoration-none" id="boton" href="./pages/distribuidores.html">Distribuidores</a>
             </div>
           </div>
+          <div class="col-lg-4">
+            <iframe class="ubicacion p-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3142.534557141162!2d-57.54864128029002!3d-38.03462899908377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584e106254d7dd3%3A0x756f4ce01c231c91!2sBiovana%20Sustentable!5e0!3m2!1ses!2sar!4v1654704600033!5m2!1ses!2sar" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <div class="text-black pt-3 text-center">&#169 BiovanaSustentable2022. Todos los derechos reservados.</div>  
         </div>
       </div>
-    </section>
-
-<!--fin del main-->
-<!--comienzo aside-->
-  <aside class="aside w-auto p-2 col-mb-3 col-sm-12 col-md-12 col-lg-12  " id="aside">
-    <div class="card text-center w-auto col-sm-12 col-md-6 col-lg-6 col-xl-6" style="width: 15em; margin: 10px;" id="aside-div2">
-      <div class="card-body ">
-        <h5 class="card-title">Carbon Activado</h5>
-        <a href="#" ><img src="./img/carbon.webp" alt="" style="width: 13em; border-radius:3% "></a>
-      </div>
-    </div> 
-
-    <div class="card text-center w-auto col-sm-12 col-md-6 col-lg-6 col-xl-6" style="width: 15em; margin: 10px;" id="aside-div2">
-      <div class="card-body " >
-        <h5 class="card-title">Curcuma</h5>
-        <a href="#" ><img src="./img/curcuma.webp" alt="" style="width: 13em; border-radius:3%;"></a>
-      </div>
-    </div>
-
-    <div class="card text-center w-auto col-sm-12 col-md-6 col-lg-6 col-xl-3" style="width: 15em; margin: 10px;" id="aside-div2">
-      <div class="card-body ">
-        <h5 class="card-title">Neutro</h5>
-        <a href="#" ><img src="./img/neutro.webp" alt="" style="width: 13em; border-radius:3%"></a>
-      </div>
-    </div>
-
-    <div class="card text-center w-auto col-sm-12 col-md-6 col-lg-6 col-xl-3" style="width: 15em; margin: 10px;" id="aside-div2">
-      <div class="card-body " >
-        <h5 class="card-title">Lavanda</h5>
-        <a href="#" ><img src="./img/lavanda.webp" alt="" style="width: 13em; border-radius:3%"></a>
-      </div>
-    </div>
-  </aside>
-<!--fin aside-->
-
-<!--inicio footer-->
-  <footer id="footer">
-    <div class="container-fluid d-flex justify-content-evenly mt-5 w-100 p-4">
-      <div class="row text-white">
-        <div class="col-xs-4 col-sm-6 col-md-6 col-lg-4">
-          <p class="h5 text-black mb-3">Seguinos</p>
-          <div class="mb-2">
-            <a class=" text-decoration-none" id="boton" href="https://www.instagram.com/biovanasustentable/">Instagram</a>
-          </div>
-          <div class="mb-2">
-            <a class="> text-decoration-none" id="boton" href="https://www.facebook.com/">Facebook</a>
-          </div>
-        </div>  
-        <div class="col-xs-4 col-sm-6 col-md-6 col-lg-4">
-          <p class="h5 text-black mb-3">Links</p>
-          <div class="mb-2">
-            <a class="> text-decoration-none" id="boton" href="./assets/tienda.html">Tienda</a>
-          </div>
-          <div class="mb-2">
-            <a class="> text-decoration-none" id="boton" href="./assets/nosotros.html">Nosotras</a>
-          </div>
-          <div class="mb-2">
-            <a class="text-decoration-none" id="boton" href="./assets/contactos.html">Contacto</a>
-          </div>
-          <div class="mb-2">
-            <a class="text-decoration-none" id="boton" href="./assets/distribuidores.html">Distribuidores</a>
-          </div>
-        </div>
-        <div class=" col-lg-4">
-          <iframe class="ubicacion p-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3142.534557141162!2d-57.54864128029002!3d-38.03462899908377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584e106254d7dd3%3A0x756f4ce01c231c91!2sBiovana%20Sustentable!5e0!3m2!1ses!2sar!4v1654704600033!5m2!1ses!2sar" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
-        <div class="text-black text-center">&#169 BiovanaSustentable2022</div>  
-      </div>
-    </div>
-  </footer>
-<!--fin footer-->
+    </footer>
+  <!--fin footer-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
 </html>
