@@ -113,7 +113,7 @@ html, body {
   max-width: 100% !important;
   overflow-x: hidden !important; }
   html #body, body #body {
-    background-image: url(../img/fondo.png);
+    background-image: url(../assets/img/fondo.webp);
     background-attachment: fixed;
     margin: 0; }
     html #body .card, body #body .card {
