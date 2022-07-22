@@ -10,6 +10,7 @@
         color:$secondaryColor;
         font-size:$textLg2;
 
+
     }
     #boton{  
         padding-right: 40px;
@@ -20,4 +21,9 @@
             transition: all .4s;
         }
     }
+}
+#logo2{
+    max-width: 150px;
+    padding-left:20px;
+    
 }

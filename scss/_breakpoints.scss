@@ -1,7 +1,7 @@
 
 @media screen and (max-width: 1000px){
     #main-section-div{
-        width: 95vw;
+        width: 90vw;
     }
     #aside{
         display: flex;
@@ -14,9 +14,159 @@
         display: none;
         }
 }
-
+//Logo de la nav
 @media screen and (max-width: 454px){
-    #logo{
-        font-size: $textMd2;
+    .logo{
+        font-size: $textLg !important;
     }
 }
+@media screen and (max-width: 335px){
+    .logo{
+        font-size: $textMd2 !important;
+    }
+}
+//botonera
+@media screen and (max-width: 990px){
+    #boton{
+        &:hover{
+        transform: none !important;
+        }
+    }
+}
+
+//h1
+@media screen and (max-width: 993px){
+    h1{
+        font-size: $textLg2 !important;
+    }
+}
+@media screen and (max-width: 819px){
+    h1{
+        font-size: $textLg !important;
+    }
+}
+
+@media screen and (max-width: 665px){
+    h1{
+        font-size: $textMd4 !important;
+    }
+}
+
+@media screen and (max-width: 568px){
+    h1{
+        font-size: $textMd3 !important;
+    }
+}
+@media screen and (max-width: 468px){
+    h1{
+        font-size: $textMd2 !important;
+        font-weight: $bold;
+    }
+}
+
+
+//texto de las fotos
+@media screen and (max-width: 819px){
+    #titulo{
+        font-size: $textMd3 !important;
+        padding: 10px !important;
+    }
+}
+@media screen and (max-width: 665px){
+    #titulo{
+        font-size: $textMd2 !important;
+    }
+}
+@media screen and (max-width: 568px){
+    #titulo{
+        font-size: $textMd !important;
+        font-weight: $bold;
+    }
+}
+
+
+@media screen and (max-width: 930px){
+    #text{
+        font-size: $textMd !important;
+    }
+}
+@media screen and (max-width: 665px){
+    #text{
+        font-size: $textSm2 !important;
+        font-weight: $regular;
+    }
+}
+@media screen and (max-width: 568px){
+    #text{
+        font-size: $textSm !important;
+        font-weight: $bold;
+    }
+}
+
+
+//icons
+@media screen and (max-width: 800px){
+    .icon{
+        width: 5em !important;
+    }
+}
+@media screen and (max-width: 680px){
+    .icon{
+        width: 4em !important;
+    }
+}
+@media screen and (max-width: 578px){    
+    .icon{
+    width: 4em !important;
+    padding: 0;
+    }   
+}
+@media screen and (max-width: 440px){    
+    .icon{
+    width: 3em !important;
+    }   
+}
+@media screen and (max-width: 360px){
+    .icon{width: 2em !important;
+    }
+}
+
+//icons text
+@media screen and (max-width: 800px){
+    .icon-text{
+        font-size: $textMd !important;
+        width: 8em;
+    }
+}
+@media screen and (max-width: 680px){
+    .icon-text{
+        font-size: $textSm2 !important;
+    }
+}
+@media screen and (max-width: 578px){
+    .icon-text{
+        font-size: $textSm !important;
+        width: 8em !important;
+    }
+}
+@media screen and (max-width: 440px){
+    .icon-text{
+        width: 7em !important;
+        padding: 0;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 360px){
+    .icon-text{
+        font-size: $textXs !important;
+        width: 6em !important;
+        padding: 0;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 440px){
+    .div-icon{
+        flex-wrap: wrap !important;
+    }
+}
+

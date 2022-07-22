@@ -26,6 +26,9 @@ html, body {
         .carousel{
             box-shadow: $shadow3;
         }
+        .div-h1{
+            width: 100vw;
+        }
         h1{
             @include d-flex(center,center);
             color: map-get($map:$paleta , $key: 'dos');
@@ -33,7 +36,6 @@ html, body {
             font-weight:$bold;
             width: 100vw;
             font-size:$textXl;
-            text-align: center;
             text-shadow: $shadow2;
             margin-top: 20px;
             }
@@ -43,7 +45,7 @@ html, body {
             position: relative;
             top:30%;
             cursor: pointer;
-            width: 85vw;
+            width: 90vw;
             margin-left: 5%;
             &:hover{
                 transform: scale(1.02);
@@ -55,7 +57,7 @@ html, body {
                 padding-bottom: 15px;
                 padding-top:10px;
                 text-align: center;
-                color: map-get($map:$paleta , $key: 'tres');
+                color: map-get($map:$paleta , $key:'tres');
                 }
             #text{
                 font-family:$secondaryFont;
@@ -67,8 +69,9 @@ html, body {
         .div-icon{
             @include d-flex(center,center);
             flex-direction:row;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             padding-top: 10px;
+            margin: 0;
             .div-item{
                 @include d-flex(center,center);
                 flex-direction:column;
@@ -79,7 +82,7 @@ html, body {
                 .icon-text{
                     @include d-flex(center,center);
                     flex-direction: wrap;
-                    width: 10em; 
+                    width: 9em; 
                     font-family:$secondaryFont;
                     font-size: $textMd2;
                     font-weight:$bold;

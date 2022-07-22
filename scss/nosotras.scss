@@ -2,5 +2,9 @@ body{
     #main-nosotros{
         @include d-flex(center,center);
         flex-direction: column;
+        #sec-nosotros{
+            margin-right: 30px !important;
+            margin-left:-10px;
+        
     }
-}
+}}
