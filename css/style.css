@@ -79,7 +79,7 @@ h3, body h2 {
 
 @media screen and (max-width: 468px) {
   h1 {
-    font-size: 1.1em !important;
+    font-size: 1em !important;
     font-weight: 600; } }
 
 @media screen and (max-width: 819px) {
@@ -249,7 +249,8 @@ html, body {
       width: 100vw;
       font-size: 3em;
       text-shadow: 2px 1px 30px #332c30;
-      margin-top: 20px; }
+      margin-top: 20px;
+      margin-left: -10px; }
     html #body section #main-section-div, body #body section #main-section-div {
       box-shadow: 2px 1px 30px #332c30;
       display: inline-block;
