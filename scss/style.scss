@@ -36,21 +36,21 @@ html, body {
             font-weight:$bold;
             width: 100vw;
             font-size:$textXl;
-            text-shadow: $shadow2;
             margin-top: 20px;
             margin-left: -10px;
             }
-        section #main-section-div{
-            box-shadow: $shadow2;
+        #main-section-div{
+            box-shadow: $shadow3;
             display: inline-block;
             position: relative;
             top:30%;
             cursor: pointer;
-            width: 90vw;
-            margin-left: 5%;
+            width: 80vw;
+            margin-left: 10%;
             &:hover{
                 transform: scale(1.02);
                 transition: all .5s;
+                box-shadow:$shadow4;
                 }
             #titulo{
                 font-family:$secondaryFont;
@@ -62,7 +62,7 @@ html, body {
                 }
             #text{
                 font-family:$secondaryFont;
-                font-size:$textMd2;
+                font-size:$textMd;
                 color:$tercerColor;
                 text-align: center;
                 }
@@ -86,14 +86,21 @@ html, body {
                     width: 9em; 
                     font-family:$secondaryFont;
                     font-size: $textMd2;
-                    font-weight:$bold;
+                    
                     padding-top: 5px;
                 }
             }
         }
         #aside{ 
-            width: 90vw;
-            padding-left: 10vw;
+            width: 90vw !important;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            }
+            h2{
+                text-align: center !important;
+            }
             #aside-div2{
                 box-shadow: $shadow;
                 margin-bottom: 50px;
@@ -101,6 +108,10 @@ html, body {
                 &:hover{
                 transform: scale(1.04);
                 transition: all .3s;
+                box-shadow:$shadow4;
+                }
+                .card-img-top{
+                    width: 100%;
                 }
                 h5{
                     font-family: $secondaryFont;
@@ -109,4 +120,3 @@ html, body {
             }
         }
     }
-}

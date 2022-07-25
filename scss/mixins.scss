@@ -1,12 +1,13 @@
 //extend del h3 lo hice en "tienda" por un h2
 
-h3{font-family:$mainFont;
+h3{
+    font-family:$mainFont;
     font-size:$textXl;
     color: $secondaryColor;
-    position: relative;
     text-shadow: $shadow2;
     margin: 10px;
     padding-bottom: 10px;
+    text-align: center;
 }
 
 //mixins

@@ -1,18 +1,27 @@
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 900px){
     #main-section-div{
-        width: 90vw;
+        width: 100vw;
     }
     #aside{
         display: flex;
+        align-items: center;
         flex-direction: row;
         flex-wrap: wrap;
+        h2{
+            justify-content: center;
+        }
     }
 }
 @media screen and (max-width: 992px){
     .ubicacion{
         display: none;
-        }
+    }
+}
+@media screen and (max-width: 992px){
+    .map-icon{
+        display: inline !important;
+    }
 }
 //Logo de la nav
 @media screen and (max-width: 454px){
@@ -20,9 +29,9 @@
         font-size: $textLg !important;
     }
 }
-@media screen and (max-width: 335px){
+@media screen and (max-width: 390px){
     .logo{
-        font-size: $textMd2 !important;
+        font-size: $textMd4 !important;
     }
 }
 //botonera
@@ -35,38 +44,42 @@
 }
 
 //h1
-@media screen and (max-width: 993px){
+@media screen and (max-width: 893px){
     h1{
         font-size: $textLg2 !important;
     }
 }
-@media screen and (max-width: 819px){
+
+
+@media screen and (max-width: 665px){
     h1{
         font-size: $textLg !important;
     }
 }
 
-@media screen and (max-width: 665px){
+@media screen and (max-width: 568px){
     h1{
         font-size: $textMd4 !important;
     }
 }
-
-@media screen and (max-width: 568px){
+@media screen and (max-width: 450px){
     h1{
         font-size: $textMd3 !important;
-    }
-}
-@media screen and (max-width: 468px){
-    h1{
-        font-size: $textMd !important;
         font-weight: $bold;
+
     }
 }
+@media screen and (max-width: 350px){
+    h1{
+        font-size: $textMd2 !important;
+    }
+}
+
 
 
 //texto de las fotos
-@media screen and (max-width: 819px){
+
+@media screen and (max-width: 850px){
     #titulo{
         font-size: $textMd3 !important;
         padding: 10px !important;
@@ -79,32 +92,39 @@
 }
 @media screen and (max-width: 568px){
     #titulo{
+        font-size: $textMd2 !important;
+        margin-top: -12px;
+    }
+}
+@media screen and (max-width: 380px){
+    #titulo{
         font-size: $textMd !important;
-        font-weight: $bold;
+        margin-top: -20px;
     }
 }
 
 
-@media screen and (max-width: 930px){
-    #text{
-        font-size: $textMd !important;
-    }
-}
 @media screen and (max-width: 665px){
     #text{
-        font-size: $textSm2 !important;
+        font-size: $textMd !important;
         font-weight: $regular;
     }
 }
-@media screen and (max-width: 568px){
+@media screen and (max-width: 360px){
     #text{
-        font-size: $textSm !important;
-        font-weight: $bold;
+        font-size: $textSm2 !important;
+
     }
 }
 
 
 //icons
+@media screen and (max-width: 440px){
+    .div-icon{
+        flex-wrap: wrap !important;
+    }
+}
+
 @media screen and (max-width: 800px){
     .icon{
         width: 5em !important;
@@ -113,21 +133,17 @@
 @media screen and (max-width: 680px){
     .icon{
         width: 4em !important;
+        padding: 0;
     }
-}
-@media screen and (max-width: 578px){    
-    .icon{
-    width: 4em !important;
-    padding: 0;
-    }   
 }
 @media screen and (max-width: 440px){    
     .icon{
-    width: 3em !important;
+        width: 3em !important;
     }   
 }
 @media screen and (max-width: 360px){
-    .icon{width: 2em !important;
+    .icon{
+        width: 2em !important;
     }
 }
 
@@ -159,14 +175,86 @@
 @media screen and (max-width: 360px){
     .icon-text{
         font-size: $textXs !important;
-        width: 6em !important;
+        width: 7em !important;
         padding: 0;
         text-align: center;
     }
 }
-@media screen and (max-width: 440px){
-    .div-icon{
-        flex-wrap: wrap !important;
+
+//h2
+@media screen and (max-width: 993px){
+    h2{
+        font-size: $textLg2 !important;
+    }
+}
+@media screen and (max-width: 665px){
+    h2{
+        font-size: $textLg !important;
+    }
+}
+@media screen and (max-width: 550px){
+    h2{
+        font-size: $textMd4 !important;
+    }
+}
+@media screen and (max-width: 400px){
+    h2{
+        font-size: $textMd3 !important;
     }
 }
 
+//aside productos
+@media screen and (max-width: 665px){
+    .card-title{
+        font-size: $textMd2 !important;
+    }
+}
+@media screen and (max-width: 568px){
+    .card-title{
+        font-size: $textMd !important;
+    }
+}
+@media screen and (max-width: 380px){
+    .card-title{
+        font-size: $textSm2 !important;
+        padding: -20px !important;
+    }
+}
+
+//footer
+@media screen and (min-width: 930px){
+    #title-footer{
+        font-size: $textMd3 !important;
+    }
+}
+@media screen and (max-width: 930px){
+    #title-footer{
+        font-size: $textMd3 !important;
+    }
+}
+@media screen and (max-width: 665px){
+    #title-footer{
+        font-size: $textMd2 !important;
+
+    }
+}
+@media screen and (max-width: 360px){
+    #title-footer{
+        font-size: $textMd !important;
+        font-weight: $bold;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .aside-div{
+        margin-top: -40px;
+        margin-bottom: -30px;
+    }
+}
+@media screen and (max-width: 766px){
+    #aside-div2{
+        padding: -20px;
+        margin-bottom: -20px;
+    }
+
+}

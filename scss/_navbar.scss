@@ -2,15 +2,22 @@
 
 #navbar{
     box-shadow:$shadow3;
-    background-color:$mainColor; 
+    background-color:$mainColor;
     width: 100vw;
     z-index: 1;
+    &:hover{
+        transform: scale(1.02);
+        transition: all .4s;
+        box-shadow:$shadow4;
+    }
+    .hamburguesa{
+        background-image: url(../assets/img/acondicionador.webp);
+    }
     .logo{
         font-family: 'Dancing Script', cursive;
         color:$secondaryColor;
         font-size:$textLg2;
-
-
+        padding-left: 20px;
     }
     #boton{  
         padding-right: 40px;

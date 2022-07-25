@@ -78,7 +78,7 @@
     <!--comienzo del main-->
     <main class="container-fluid w-100 m-0 p-0">
       <div class="container-fluid div-h1">
-        <h1 class="p-2 text-center">Somos cosmetica natural, somos Biovana Sustentable!</h1> 
+        <h1 class="p-2 text-center">Biovana Sustentable, cosmetica natural</h1> 
       </div>
       <section class="py-4 col-md-12" >
         <div class="card mb-3 col-sm-12 col-md-8 col-lg-12 col-xl-12" id="main-section-div" >
@@ -133,18 +133,18 @@
     </main>
   <!--fin del main-->
   <!--comienzo aside-->
-    <aside id="aside">
-      <h3 class="text-center p-5">Nuestra linea de jabones </h3>
-      <div class="row row-cols-1 row-cols-md-4 g-3 text-center" id="aside-items">
-        <div class="col col-sm-6 col">
+    <aside class="container-fluid" id="aside">
+      <h2 class="text-center p-3">Nuestra linea de jabones</h2>
+      <div class="row row-cols-2 row-cols-md-4 g-3 text-center " id="aside-items">
+        <div class="col col-sm-6  d-flex justify-content-center pt-5 aside-div">
           <div class="card" id="aside-div2">
             <a href="./pages/tienda.html"><img  src="./assets/img/carbon.webp" class="card-img-top" alt="jabon de carbon activado"></a>
             <div class="card-body">
-              <h5 class="card-title">Carbón</h5>
+              <h5 class="card-title">Carbón Activado</h5>
             </div>
           </div>
         </div>
-        <div class="col col-sm-6">
+        <div class="col col-sm-6 d-flex justify-content-center pt-5 aside-div">
           <div class="card" id="aside-div2">
             <a href="./pages/tienda.html"><img src="./assets/img/canela.webp" class="card-img-top" alt="jabon de canela"></a>
             <div class="card-body">
@@ -152,7 +152,7 @@
             </div>
           </div>
         </div>
-        <div class="col col-sm-6">
+        <div class="col col-sm-6 d-flex justify-content-center pt-5 aside-div">
           <div class="card" id="aside-div2">
             <a href="./pages/tienda.html"><img src="./assets/img/lavanda.webp" class="card-img-top" alt="jabon de lavanda"></a>
             <div class="card-body">
@@ -160,7 +160,7 @@
             </div>
           </div>
         </div>
-        <div class="col col-sm-6">
+        <div class="col col-sm-6 d-flex justify-content-center pt-5 aside-div">
           <div class="card" id="aside-div2">
             <a href="./pages/tienda.html"><img src="./assets/img/neutro.webp" class="card-img-top" alt="jabon neutro"></a>
             <div class="card-body">
@@ -173,40 +173,43 @@
   <!--fin aside-->
   <!--inicio footer-->
     <footer id="footer">
-      <div class="container-fluid d-flex justify-content-evenly mt-5 w-100 p-4">
-        <div class="row text-white">
-          <div class="col-xs-4 col-sm-6 col-md-6 col-lg-4">
-            <p class="h5 text-black mb-3">Seguinos</p>
-            <div class="mb-2 d-inline-block ">
+      <div class="container-fluid d-flex justify-content-evenly mt-2 w-100 p-3">
+        <div class="row p-3 text-white">
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4">
+            <p class="h5 text-black mb-3" id="title-footer">Seguinos</p>
+            <div class="mb-2 d-inline-block">
               <a href="https://www.instagram.com/biovanasustentable/"><img src="./assets/icons/instagram.svg" alt="instagram"></a>
             </div>
-            <div class="mb-2 d-inline-block ">
+            <div class="mb-2 d-inline-block">
               <a href="https://www.facebook.com/"><img src="./assets/icons/facebook.svg" alt="facebook"></a>
             </div>
-            <div class="mb-2 d-inline-block ">
+            <div class="mb-2 d-inline-block">
               <a href="https://www.twitter.com"><img src="./assets/icons/twitter.svg" alt="twitter"></a>
             </div>
+            <div class="mb-2 d-inline-block map-icon">
+              <a href="https://www.google.com/maps/place/Biovana+Sustentable/@-38.034633,-57.544414,15z/data=!4m5!3m4!1s0x0:0x756f4ce01c231c91!8m2!3d-38.0346333!4d-57.5444141?hl=es" class="map-icon" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"><img src="./assets/icons/map.svg" alt="mapa"></a>
+            </div>
           </div>  
-          <div class="col-xs-4 col-sm-6 col-md-6 col-lg-4">
-            <p class="h5 text-black mb-3">Links</p>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4">
+            <p class="h5 text-black mb-3" id="title-footer">Links</p>
             <div class="mb-2">
-              <a class="text-decoration-none" id="boton" href="./pages/tienda.html">Tienda</a>
+              <a class="text-decoration-none text-black" id="text" href="./pages/tienda.html">Tienda</a>
             </div>
             <div class="mb-2">
-              <a class="text-decoration-none" id="boton" href="./pages/nosotros.html">Nosotras</a>
+              <a class="text-decoration-none text-black" id="text" href="./pages/nosotros.html">Nosotras</a>
             </div>
             <div class="mb-2">
-              <a class="text-decoration-none" id="boton" href="./pages/contactos.html">Contacto</a>
+              <a class="text-decoration-none text-black" id="text" href="./pages/contactos.html">Contacto</a>
             </div>
             <div class="mb-2">
-              <a class="text-decoration-none" id="boton" href="./pages/distribuidores.html">Distribuidores</a>
+              <a class="text-decoration-none text-black" id="text" href="./pages/distribuidores.html">Distribuidores</a>
             </div>
           </div>
           <div class="col-lg-4">
             <iframe class="ubicacion p-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3142.534557141162!2d-57.54864128029002!3d-38.03462899908377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584e106254d7dd3%3A0x756f4ce01c231c91!2sBiovana%20Sustentable!5e0!3m2!1ses!2sar!4v1654704600033!5m2!1ses!2sar" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>
           </div>
-          <div class="text-black pt-3 text-center">&#169 BiovanaSustentable2022. Todos los derechos reservados.</div>  
+          <div class="text-black pt-4 text-center" id="text">&#169 BiovanaSustentable2022. Todos los derechos reservados.</div>  
         </div>
       </div>
     </footer>

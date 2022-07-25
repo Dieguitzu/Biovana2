@@ -3,20 +3,27 @@ h3, body h2 {
   font-family: "Dancing Script", cursive;
   font-size: 3em;
   color: #5c285ce6;
-  position: relative;
   text-shadow: 2px 1px 30px #332c30;
   margin: 10px;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  text-align: center; }
 
 #navbar {
-  box-shadow: 10px 3px 30px #202020;
+  box-shadow: 10px 3px 20px #202020;
   background-color: #d7b5f7b3;
   width: 100vw;
   z-index: 1; }
+  #navbar:hover {
+    transform: scale(1.02);
+    transition: all .4s;
+    box-shadow: 5px 3px 40px #202020; }
+  #navbar .hamburguesa {
+    background-image: url(../assets/img/acondicionador.webp); }
   #navbar .logo {
     font-family: 'Dancing Script', cursive;
     color: #5c285ce6;
-    font-size: 2.5em; }
+    font-size: 2.5em;
+    padding-left: 20px; }
   #navbar #boton {
     padding-right: 40px;
     color: #00080f; }
@@ -36,89 +43,98 @@ h3, body h2 {
     color: #00080f; }
   #footer .ubicacion {
     box-shadow: 3px 3px 15px #202020; }
+  #footer .map-icon {
+    display: none; }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
   #main-section-div {
-    width: 90vw; }
+    width: 100vw; }
   #aside {
     display: flex;
+    align-items: center;
     flex-direction: row;
-    flex-wrap: wrap; } }
+    flex-wrap: wrap; }
+    #aside h2 {
+      justify-content: center; } }
 
 @media screen and (max-width: 992px) {
   .ubicacion {
     display: none; } }
 
+@media screen and (max-width: 992px) {
+  .map-icon {
+    display: inline !important; } }
+
 @media screen and (max-width: 454px) {
   .logo {
     font-size: 2em !important; } }
 
-@media screen and (max-width: 335px) {
+@media screen and (max-width: 390px) {
   .logo {
-    font-size: 1.1em !important; } }
+    font-size: 1.7em !important; } }
 
 @media screen and (max-width: 990px) {
   #boton:hover {
     transform: none !important; } }
 
-@media screen and (max-width: 993px) {
+@media screen and (max-width: 893px) {
   h1 {
     font-size: 2.5em !important; } }
 
-@media screen and (max-width: 819px) {
+@media screen and (max-width: 665px) {
   h1 {
     font-size: 2em !important; } }
 
-@media screen and (max-width: 665px) {
+@media screen and (max-width: 568px) {
   h1 {
     font-size: 1.7em !important; } }
 
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 450px) {
   h1 {
-    font-size: 1.4em !important; } }
-
-@media screen and (max-width: 468px) {
-  h1 {
-    font-size: 1em !important;
+    font-size: 1.4em !important;
     font-weight: 600; } }
 
-@media screen and (max-width: 819px) {
+@media screen and (max-width: 350px) {
+  h1 {
+    font-size: 1.2em !important; } }
+
+@media screen and (max-width: 850px) {
   #titulo {
     font-size: 1.4em !important;
     padding: 10px !important; } }
 
 @media screen and (max-width: 665px) {
   #titulo {
-    font-size: 1.1em !important; } }
+    font-size: 1.2em !important; } }
 
 @media screen and (max-width: 568px) {
   #titulo {
-    font-size: 1em !important;
-    font-weight: 600; } }
+    font-size: 1.2em !important;
+    margin-top: -12px; } }
 
-@media screen and (max-width: 930px) {
-  #text {
-    font-size: 1em !important; } }
+@media screen and (max-width: 380px) {
+  #titulo {
+    font-size: 1em !important;
+    margin-top: -20px; } }
 
 @media screen and (max-width: 665px) {
   #text {
-    font-size: 0.8em !important;
+    font-size: 1em !important;
     font-weight: 400; } }
 
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 360px) {
   #text {
-    font-size: 0.6em !important;
-    font-weight: 600; } }
+    font-size: 0.8em !important; } }
+
+@media screen and (max-width: 440px) {
+  .div-icon {
+    flex-wrap: wrap !important; } }
 
 @media screen and (max-width: 800px) {
   .icon {
     width: 5em !important; } }
 
 @media screen and (max-width: 680px) {
-  .icon {
-    width: 4em !important; } }
-
-@media screen and (max-width: 578px) {
   .icon {
     width: 4em !important;
     padding: 0; } }
@@ -154,16 +170,68 @@ h3, body h2 {
 @media screen and (max-width: 360px) {
   .icon-text {
     font-size: 0.5em !important;
-    width: 6em !important;
+    width: 7em !important;
     padding: 0;
     text-align: center; } }
 
-@media screen and (max-width: 440px) {
-  .div-icon {
-    flex-wrap: wrap !important; } }
+@media screen and (max-width: 993px) {
+  h2 {
+    font-size: 2.5em !important; } }
+
+@media screen and (max-width: 665px) {
+  h2 {
+    font-size: 2em !important; } }
+
+@media screen and (max-width: 550px) {
+  h2 {
+    font-size: 1.7em !important; } }
+
+@media screen and (max-width: 400px) {
+  h2 {
+    font-size: 1.4em !important; } }
+
+@media screen and (max-width: 665px) {
+  .card-title {
+    font-size: 1.2em !important; } }
+
+@media screen and (max-width: 568px) {
+  .card-title {
+    font-size: 1em !important; } }
+
+@media screen and (max-width: 380px) {
+  .card-title {
+    font-size: 0.8em !important;
+    padding: -20px !important; } }
+
+@media screen and (min-width: 930px) {
+  #title-footer {
+    font-size: 1.4em !important; } }
+
+@media screen and (max-width: 930px) {
+  #title-footer {
+    font-size: 1.4em !important; } }
+
+@media screen and (max-width: 665px) {
+  #title-footer {
+    font-size: 1.2em !important; } }
+
+@media screen and (max-width: 360px) {
+  #title-footer {
+    font-size: 1em !important;
+    font-weight: 600; } }
+
+@media screen and (max-width: 768px) {
+  .aside-div {
+    margin-top: -40px;
+    margin-bottom: -30px; } }
+
+@media screen and (max-width: 766px) {
+  #aside-div2 {
+    padding: -20px;
+    margin-bottom: -20px; } }
 
 body main #tienda-div {
-  box-shadow: 10px 3px 30px #202020;
+  box-shadow: 10px 3px 20px #202020;
   cursor: pointer;
   font-family: sans-serif, "Segoe UI", Tahoma, Verdana;
   text-align: center;
@@ -196,10 +264,11 @@ body #main-nosotros {
   .main-contact .main-div {
     background-color: #d7b5f7b3;
     border-radius: 3%;
-    box-shadow: 10px 3px 30px #202020; }
+    box-shadow: 10px 3px 20px #202020; }
     .main-contact .main-div:hover {
       transform: scale(1.04);
-      transition: all .4s; }
+      transition: all .4s;
+      box-shadow: 5px 3px 40px #202020; }
     .main-contact .main-div .btn {
       background-color: #d7b5f7b3;
       color: #00080f;
@@ -217,7 +286,7 @@ body #main-dist {
   body #main-dist #distribuidor {
     display: flex;
     max-width: 600px;
-    box-shadow: 10px 3px 30px #202020;
+    box-shadow: 10px 3px 20px #202020;
     border-radius: 3%;
     font-family: sans-serif, "Segoe UI", Tahoma, Verdana; }
     body #main-dist #distribuidor:hover {
@@ -232,11 +301,11 @@ html, body {
     background-attachment: fixed;
     margin: 0; }
     html #body .card, body #body .card {
-      background-color: rgba(245, 245, 245, 0.2); }
+      background-color: rgba(245, 245, 245, 0.4); }
     html #body .card-header, html #body .card-footer, body #body .card-header, body #body .card-footer {
       opacity: 1.2; }
     html #body .carousel, body #body .carousel {
-      box-shadow: 10px 3px 30px #202020; }
+      box-shadow: 10px 3px 20px #202020; }
     html #body .div-h1, body #body .div-h1 {
       width: 100vw; }
     html #body h1, body #body h1 {
@@ -248,30 +317,30 @@ html, body {
       font-weight: 600;
       width: 100vw;
       font-size: 3em;
-      text-shadow: 2px 1px 30px #332c30;
       margin-top: 20px;
       margin-left: -10px; }
-    html #body section #main-section-div, body #body section #main-section-div {
-      box-shadow: 2px 1px 30px #332c30;
+    html #body #main-section-div, body #body #main-section-div {
+      box-shadow: 10px 3px 20px #202020;
       display: inline-block;
       position: relative;
       top: 30%;
       cursor: pointer;
-      width: 90vw;
-      margin-left: 5%; }
-      html #body section #main-section-div:hover, body #body section #main-section-div:hover {
+      width: 80vw;
+      margin-left: 10%; }
+      html #body #main-section-div:hover, body #body #main-section-div:hover {
         transform: scale(1.02);
-        transition: all .5s; }
-      html #body section #main-section-div #titulo, body #body section #main-section-div #titulo {
+        transition: all .5s;
+        box-shadow: 5px 3px 40px #202020; }
+      html #body #main-section-div #titulo, body #body #main-section-div #titulo {
         font-family: sans-serif, "Segoe UI", Tahoma, Verdana;
         font-size: 2em;
         padding-bottom: 15px;
         padding-top: 10px;
         text-align: center;
         color: #974997; }
-      html #body section #main-section-div #text, body #body section #main-section-div #text {
+      html #body #main-section-div #text, body #body #main-section-div #text {
         font-family: sans-serif, "Segoe UI", Tahoma, Verdana;
-        font-size: 1.1em;
+        font-size: 1em;
         color: #381938;
         text-align: center; }
     html #body .div-icon, body #body .div-icon {
@@ -299,19 +368,26 @@ html, body {
           flex-direction: wrap;
           width: 9em;
           font-family: sans-serif, "Segoe UI", Tahoma, Verdana;
-          font-size: 1.1em;
-          font-weight: 600;
+          font-size: 1.2em;
           padding-top: 5px; }
     html #body #aside, body #body #aside {
-      width: 90vw;
-      padding-left: 10vw; }
-      html #body #aside #aside-div2, body #body #aside #aside-div2 {
-        box-shadow: 3px 3px 15px #202020;
-        margin-bottom: 50px;
-        cursor: pointer; }
-        html #body #aside #aside-div2:hover, body #body #aside #aside-div2:hover {
-          transform: scale(1.04);
-          transition: all .3s; }
-        html #body #aside #aside-div2 h5, body #body #aside #aside-div2 h5 {
-          font-family: sans-serif, "Segoe UI", Tahoma, Verdana;
-          color: #5c285c; }
+      width: 90vw !important;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap; }
+    html #body h2, body #body h2 {
+      text-align: center !important; }
+    html #body #aside-div2, body #body #aside-div2 {
+      box-shadow: 3px 3px 15px #202020;
+      margin-bottom: 50px;
+      cursor: pointer; }
+      html #body #aside-div2:hover, body #body #aside-div2:hover {
+        transform: scale(1.04);
+        transition: all .3s;
+        box-shadow: 5px 3px 40px #202020; }
+      html #body #aside-div2 .card-img-top, body #body #aside-div2 .card-img-top {
+        width: 100%; }
+      html #body #aside-div2 h5, body #body #aside-div2 h5 {
+        font-family: sans-serif, "Segoe UI", Tahoma, Verdana;
+        color: #5c285c; }
