@@ -62,7 +62,7 @@
         font-size: $textMd4 !important;
     }
 }
-@media screen and (max-width: 450px){
+@media screen and (max-width: 410px){
     h1{
         font-size: $textMd3 !important;
         font-weight: $bold;
@@ -79,7 +79,7 @@
 
 //texto de las fotos
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 1050px){
     #titulo{
         font-size: $textMd3 !important;
         padding: 10px !important;
@@ -106,7 +106,7 @@
 
 @media screen and (max-width: 665px){
     #text{
-        font-size: $textMd !important;
+        font-size: $textSm2 !important;
         font-weight: $regular;
     }
 }
@@ -197,9 +197,48 @@
         font-size: $textMd4 !important;
     }
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 410px){
     h2{
         font-size: $textMd3 !important;
+    }
+}
+@media screen and (max-width: 350px){
+    h2{
+        font-size: $textMd !important;
+    }
+}
+//h3
+@media screen and (max-width: 1050px){
+    h3{
+        font-size: $textLg2 !important;
+    }
+}
+@media screen and (max-width: 600px){
+    h3{
+        font-size: $textLg !important;
+    }
+}
+@media screen and (max-width: 390px){
+    h3{
+        font-size: $textMd4 !important;
+    }
+}
+
+
+// contact h3
+@media screen and (max-width: 1050px){
+    main form h3{
+        font-size: $textLg2 !important;
+    }
+}
+@media screen and (max-width: 600px){
+    main form h3{
+        font-size: $textLg !important;
+    }
+}
+@media screen and (max-width: 390px){
+    main form h3{
+        font-size: $textMd4 !important;
     }
 }
 
@@ -247,7 +286,7 @@
 
 @media screen and (max-width: 768px){
     .aside-div{
-        margin-top: -40px;
+        margin-top: -25px;
         margin-bottom: -30px;
     }
 }

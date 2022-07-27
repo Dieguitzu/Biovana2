@@ -54,11 +54,11 @@ html, body {
                 }
             #titulo{
                 font-family:$secondaryFont;
-                font-size:$textLg;
+                font-size:$textMd4;
                 padding-bottom: 15px;
                 padding-top:10px;
                 text-align: center;
-                color: map-get($map:$paleta , $key:'tres');
+                color: map-get($map:$paleta , $key:'dos');
                 }
             #text{
                 font-family:$secondaryFont;
@@ -99,7 +99,9 @@ html, body {
             flex-wrap: wrap;
             }
             h2{
+                @extend h4;
                 text-align: center !important;
+                
             }
             #aside-div2{
                 box-shadow: $shadow;
@@ -117,6 +119,12 @@ html, body {
                     font-family: $secondaryFont;
                     color:$secondaryColor2;
                 }
+            }
+            .homero{    
+                width: 100vw;
+                margin-left: -24px;
+                margin-bottom: -48px;
+                z-index: -1;
             }
         }
     }

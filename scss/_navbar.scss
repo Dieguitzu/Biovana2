@@ -5,6 +5,8 @@
     background-color:$mainColor;
     width: 100vw;
     z-index: 1;
+    padding-top:0;
+    padding-bottom: -7px;
     &:hover{
         transform: scale(1.02);
         transition: all .4s;
@@ -28,9 +30,4 @@
             transition: all .4s;
         }
     }
-}
-#logo2{
-    max-width: 150px;
-    padding-left:20px;
-    
 }

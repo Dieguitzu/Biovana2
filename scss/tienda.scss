@@ -1,6 +1,12 @@
 body{
-    h2{
-    @extend h3 ;
+    h3{
+        font-family:$mainFont;
+        font-size:$textLg2;
+        color: $secondaryColor;
+        text-shadow: $shadow2;
+        margin: 10px;
+        padding-bottom: 10px;
+        text-align: center;
     }
     main #tienda-div{
         box-shadow:$shadow3;
@@ -8,9 +14,12 @@ body{
         font-family: $secondaryFont;
         text-align: center;
         margin-bottom: 10px;
+        max-height: 35em;
+        overflow:visible;
         &:hover{
             transform: scale(1.1);
             transition: all .5s;
+            box-shadow:$shadow4;
             }
         .btn{
             background-color:$mainColor;
